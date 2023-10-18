@@ -13,6 +13,6 @@ WORKDIR $APP_PATH
 
 COPY Gemfile* $APP_PATH/
 RUN gem update --system && bundle install
-COPY . $APP_PATH/
+COPY .. $APP_PATH/
 
 EXPOSE 3000
