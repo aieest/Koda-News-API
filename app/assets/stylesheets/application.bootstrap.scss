@@ -1,2 +1,56 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+  padding-top: 20px;
+}
+
+.main-header {
+  text-align: center;
+  margin: 2vh auto 2vh auto;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  margin: 15px;
+  width: 30vh;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.news-img {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.news-text-div {
+  padding: 10px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.news-author {
+  font-size: 14px;
+  color: #555;
+}
+
+.news-content {
+  font-size: 14px;
+  margin: 10px 0;
+}
