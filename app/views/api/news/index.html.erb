@@ -1,0 +1,19 @@
+<content class="news-articles d-flex flex-wrap">
+
+  <% @articles.each do |article| %>
+    <section class="news-card">
+
+      <div class="news-img-container">
+        <%= image_tag article['urlToImage'] if article['urlToImage'].present? %>
+      </div>
+
+      <div class="news-text-div">
+        <h1 class="news-title"><%= article['title'] %></h1>
+        <p class="news-author"><td><%= article['author'] %></td></p>
+        <p class="news-content"><td><%= article['content'] %></td></p>
+      </div>
+
+    </section>
+  <% end %>
+
+</content>
